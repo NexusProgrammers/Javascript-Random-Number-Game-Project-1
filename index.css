@@ -1,0 +1,223 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font size and family */
+html {
+  font-size: 62.5%;
+  font-family: "Press Start 2P", sans-serif;
+  background-color: #222;
+}
+
+body {
+  color: #eee;
+  padding: 2rem;
+}
+
+/* Header styles */
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.between {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-color: #eee;
+  color: #222;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.again:hover {
+  background-color: #ccc;
+}
+
+.number {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+/* Main content styles */
+main {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 40rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  color: inherit;
+  font-size: 4rem;
+  padding: 1.5rem 2rem;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: border-color 0.3s;
+}
+
+.guess:focus {
+  outline: none;
+  border-color: #ccc;
+}
+
+.check {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+
+.score-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.label-score,
+.label-highscore {
+  margin-bottom: 1rem;
+}
+
+/* Timer styles */
+.timer {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+/* Additional styling for the game result and buttons */
+.message {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.check,
+.again {
+  font-size: 1.8rem;
+  padding: 1.5rem 2.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #222;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.check:hover,
+.again:hover {
+  background-color: #ccc;
+}
+
+.again {
+  margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  header {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .between {
+    font-size: 1.2rem;
+  }
+
+  .again {
+    font-size: 1.2rem;
+  }
+
+  .number {
+    font-size: 5rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .guess {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .check {
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .message {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+}
